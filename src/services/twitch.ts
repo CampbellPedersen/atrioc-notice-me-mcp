@@ -5,7 +5,7 @@ import { ChatMessage } from "../mcp/types.js";
 import { TwitchAuthInfo } from "../middleware/twitch-oauth.js";
 import { sleep } from "../util/sleep.js";
 
-export const SCOPES = ['chat:read', 'chat:edit', 'channel:read:subscriptions'];
+export const SCOPES = ['chat:read', 'chat:edit'];
 
 type GetUserParams = {
   login: string;
@@ -63,12 +63,12 @@ export const getChatMessageBatch = async ({channel, client}: GetChatMessageBatch
 
 type SendMessageParams = {
   message: string;
-  to: User;
-  client: ApiClient;
+  to: string;
+  client: ChatClient;
 }
 
 export const sendMessage = async ({message, to, client}: SendMessageParams): Promise<void> => {
-  await client.chat.sendChatMessage(to.id, message)
+  await client.say(to, message);
 }
 
 export const getApiClient = (auth: TwitchAuthInfo) => {

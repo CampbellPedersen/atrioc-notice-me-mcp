@@ -1,5 +1,5 @@
 import { TwitchAuthInfo } from "../middleware/twitch-oauth.js";
-import { getApiClient, getUser, sendMessage } from "./twitch.js";
+import { getChatClient, sendMessage } from "./twitch.js";
 
 type SendMessageToAtriocParams = {
   auth: TwitchAuthInfo;
@@ -7,7 +7,9 @@ type SendMessageToAtriocParams = {
 }
 
 export const sendMessageToAtrioc = async ({message, auth}: SendMessageToAtriocParams) => {
-  const apiClient = getApiClient(auth);
-  const atrioc = await getUser({login: 'atrioc', client: apiClient});
-  await sendMessage({message, to: atrioc, client: apiClient});
+  const to = 'atrioc';
+  const chatClient = getChatClient(auth, [to]);
+  chatClient.connect();
+  await sendMessage({message, to, client: chatClient});
+  chatClient.quit();
 }

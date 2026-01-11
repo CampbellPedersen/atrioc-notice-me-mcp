@@ -15,7 +15,7 @@ export const getMcpServer = () => {
     "check_stream",
     {
       title: "Check Atrioc's Stream",
-      description: "Checks Atrioc's Twitch stream title, current streaming category and the last 100 messages from chat. Use this to look at what everyone else is saying in Atrioc's chat. Then use this information to come up with an original, funny stand-out message to send to his chat!",
+      description: `Checks Atrioc's Twitch stream title, current streaming category and grab 5 seconds of chat messages. Then, use this information to come up with an original, funny stand-out message to send to his chat!`,
       outputSchema: CheckChatOutputSchema,
     },
     async ({authInfo}) => {
