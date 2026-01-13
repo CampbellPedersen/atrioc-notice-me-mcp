@@ -47,16 +47,16 @@ export const getChannel = async ({user, client}: GetChannelParams): Promise<Chan
 }
 
 type GetChatMessageBatchParams = {
-  channel: string;
   client: ChatClient;
 }
 
-export const getChatMessageBatch = async ({channel, client}: GetChatMessageBatchParams): Promise<ChatMessage[]> => {
+export const getChatMessageBatch = async ({client}: GetChatMessageBatchParams): Promise<ChatMessage[]> => {
+  const secondsToGrab = 5;
   const messages: ChatMessage[] = [];
   const chatListener = client.onMessage((_, user, text) => {
     messages.push({username: user, content: text})
   });
-  await sleep(5000);
+  await sleep(secondsToGrab * 1000); // ms
   chatListener.unbind();
   return messages;
 }

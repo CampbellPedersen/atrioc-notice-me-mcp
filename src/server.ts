@@ -1,3 +1,4 @@
+import express from 'express';
 import dotenv from 'dotenv';
 dotenv.config();
 
@@ -11,6 +12,7 @@ const HOST = process.env.HOST ?? 'localhost';
 export const MCP_URL = `https://${HOST}/mcp`;
 const app = createMcpExpressApp({allowedHosts: [HOST, 'localhost']});
 
+app.use(express.static("public"));
 app.use(corsMiddleware)
 app.use(oauthRouter)
 app.use('/mcp', twitchOAuthMiddleware, mcpRouter);

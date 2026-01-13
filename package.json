@@ -14,9 +14,9 @@
   "license": "ISC",
   "dependencies": {
     "@modelcontextprotocol/sdk": "1.25.2",
-    "@twurple/api": "^8.0.2",
-    "@twurple/auth": "^8.0.2",
-    "@twurple/chat": "^8.0.2",
+    "@twurple/api": "8.0.2",
+    "@twurple/auth": "8.0.2",
+    "@twurple/chat": "8.0.2",
     "cors": "2.8.5",
     "dotenv": "17.2.3",
     "express": "5.2.1"
