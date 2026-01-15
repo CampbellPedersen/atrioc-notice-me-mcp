@@ -3,6 +3,12 @@ Stand out from the crowd by having AI write your chat messages for you! Who know
 
 Built as a submission for [Class Clown's](https://classclown.cc) "Make the Worst Business" task.
 
+## Proof it Works
+
+<img width="1070" height="683" alt="message" src="https://github.com/user-attachments/assets/93b4da2a-67a0-4f31-a773-2273fdade178" />
+
+https://github.com/user-attachments/assets/f71deaef-57c7-4dd1-a256-c9af9eb73668
+
 ## Features
 - Seamlessly send an AI-generated messages to Atrioc's Twitch chat, you're basically a bot anyway
 - Generates relevant chat messages by checking Atrioc's Twitch stream title, category and chat messages
