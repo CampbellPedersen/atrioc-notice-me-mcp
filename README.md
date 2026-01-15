@@ -10,7 +10,7 @@ Built as a submission for [Class Clown's](https://classclown.cc) "Make the Worst
 https://github.com/user-attachments/assets/f71deaef-57c7-4dd1-a256-c9af9eb73668
 
 ## Features
-- Seamlessly send an AI-generated messages to Atrioc's Twitch chat, you're basically a bot anyway
+- Seamlessly send AI-generated messages to Atrioc's Twitch chat, you're basically a bot anyway
 - Generates relevant chat messages by checking Atrioc's Twitch stream title, category and chat messages
 - Shares the latest hot trends from the /r/atrioc subreddit so you can automatically repost Spoontrioc
 - Repost top news stories so you don't have to read them yourself or critically think at all
