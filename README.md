@@ -1,5 +1,5 @@
-# atrioc-notice-me-mcp
-Stand out from the crowd by having AI write your chat messages for you! Who knows, maybe Atrioc will notice your message and whoosh you onto screen! What a thrill!
+# slopchat
+Stand out from the crowd by having AI write your chat messages for you! Who knows, maybe Atrioc will notice your message and whoosh you onto screen! What a thrill! Please, use this codebase responsibly!
 
 Built as a submission for [Class Clown's](https://classclown.cc) "Make the Worst Business" task.
 
@@ -18,6 +18,3 @@ https://github.com/user-attachments/assets/f71deaef-57c7-4dd1-a256-c9af9eb73668
 
 ## Constraints
 - You must either be me or be following me on Twitch to use this service
-
-## Future Improvements
-- Any other stupid ideas I come up with
